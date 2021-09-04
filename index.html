@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -18,53 +20,49 @@
 
     <!-- link your javascript sketch -->
     <script src="scripts/sprites.js" type="text/javascript"></script>
-
     <script src="main.js" type="text/javascript"></script>
-
     <script src="characters_environment.js" type="text/javascript"></script>
 
     <link rel="stylesheet" type="text/css" href="style.css">
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
-
   </head>
   <body background="background.jpg">
-   <center>
-     <div class="btn btn-primary heading">
-        <h3>AI MARIO GAME</h3>
-        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Instructions</button>
-     </div>
+    <center>
 
-     <img src="mario.jpg" class="big_image">
-     <br><br>
-     <button class="btn btn-success" onclick="startGame()" id="start">Start Game</button>
-     <br><br>
-     <h3 id="status" class="btn btn-danger"></h3>
-     <br><br>
-     <div id="canvas">
-     <canvas id="defaultCanvas0" width="2480" height="672" style="width: 1240px; height: 336px;">
-     </canvas>
-    </div>
-    <div id="game_console"><video crossorigin="anonymous" width="800" height="400" style="width: 800px; height: 400px;"></video></div>
-     <h4>
-      Source Code: <a href="https://github.com/linuk">Linuk</a> ||  Game Credit: Mario
-    </h4>
+      <div class="btn btn-primary heading">
+        <h3>AI MARIO GAME </h3>
+        <button class="btn btn-primary"  data-toggle="modal" data-target="#myModal">Instructions</button>
+      </div>
 
-    <div id="myModal" class="modal fade">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button class="close" data-dismiss="modal">&times;</button>
-            <h3>Instructions</h3>
-          </div>
-          <div class="modal-body">
-            <img src="jump.png" class="instruction_image">
-            <img src="left.png" class="instruction_image">
-            <img src="right.png" class="instruction_image">
+      <img src="mario.jpg" class="big_image">
+      <br><br>
+      <button class="btn btn-success" onclick="startGame()" id="start">Play Game</button>
+      <br><br>
+      <h3 id="status" class="btn btn-warning"></h3>
+      <br><br>
+      <div id="canvas"></div>
+      <div id="game_console"></div>
+      <h4>Source Code : <a href="https://github.com/linuk">Linuk</a> ||  Game Credit : Mario</h4>
+      
+      <div id="myModal" class="modal fade ">
+        <div class="modal-dialog" >
+          <!-- Modal content-->
+          <div class="modal-content">
+      
+            <div class="modal-header">
+              <button class="close" data-dismiss="modal">&times;</button>
+              <h4>Instructions</h4>
+            </div>
+      
+             <div class="modal-body">
+                <img src="jump.png" class="img-responsive instruction_image">
+                <img src="right.png" class="img-responsive instruction_image">
+                <img src="left.png" class="img-responsive instruction_image">
+              </div>
+
           </div>
         </div>
       </div>
-    </div>
-   </center>
-  </body>
+</center>
+</body>
 </html>
