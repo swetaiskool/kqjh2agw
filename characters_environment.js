@@ -1,3 +1,4 @@
+
 /*=================================
 =            Variables            =
 =================================*/
@@ -628,3 +629,4 @@ function upSide(obj){ return obj.position.y-(obj.height/2);}
 function downSide(obj){ return obj.position.y+(obj.height/2);}
 
 /*=====  End of For Debugging  ======*/
+
